@@ -1,8 +1,11 @@
 *{
     padding: 0%;
     margin: 0%;
+    scroll-behavior: smooth;
 }
 header{
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -47,6 +50,7 @@ ul{
     background-color: rgb(207, 207, 54);
     width: 10rem;
     height: 2rem;
+    font-weight: bold;
     text-align: center;
     padding-top: 1rem;
     border-radius: 1rem;
@@ -59,22 +63,30 @@ ul{
 .j-c{
     justify-content: space-between;
 }
+.j-center{
+    justify-content: center;
+}
 
 .img-g{
     top: 20;
     position: relative;
 }
 .first{
-    width: 1585px;
+    width: 1588px;
     position: absolute;
-    top: 342px;
-    right: 2px;
-    height: 369px;
+    top: 351px;
+    right: 1px;
+    height: 374px;
 }
 .second{
     position: relative;
     z-index: 1;
+    width: 100%;
+    top:46px;
    
+}
+.container{
+    padding: 0 80px;
 }
 .mar-g{
     margin-top: 44px;
@@ -83,6 +95,7 @@ ul{
     font-size: 2rem;
     display: flex;
     justify-content: center;
+    
 }
 .ord-er{
     display: flex;
@@ -99,18 +112,18 @@ ul{
     display: flex;
 }
 .a-1{
-    width: 484px;
+    width: 474px;
     margin-top: 84px;
 }
 .b-2{
-    margin-left: 112px;
-    margin-top: 159px;
-    width: 484px;
+    margin-left: 107px;
+    margin-top: 150px;
+    width: 474px;
 }
 .c-3{
-    margin-left: 115px;
+    margin-left: 148px;
     margin-top: 246px;
-    width: 484px;
+    width: 474px;
 }
 .mar-gin{
     text-align: center;
@@ -123,7 +136,7 @@ ul{
     margin-left: 18px;
 }
 .img-1{
-    margin-left: 100px;
+    margin-left: 51px;
     width: 374px;
 }
 .img-2{
@@ -135,7 +148,7 @@ ul{
     width: 374px;
 }
 .img-4{
-    margin-left: 50px;
+    margin-left: 15px;
     width: 374px;
 }
 .im-g p{
@@ -180,10 +193,7 @@ ul{
     position: absolute;
 }
 .sect-ion{
-    background-color: rgb(253, 244, 244);
-    width: 400px;
     text-align: center;
-    margin-left: 100px;
     border-radius: 7px;
     padding-top: 24px;
     padding-left: 18px;
@@ -205,10 +215,14 @@ ul{
     padding: 7px;
     border-radius: 10px;
 }
-/* .back:hover{
-    background-color: white;
-    color: black;
-} */
+.back:hover{
+    background: white;
+    color: rgb(27, 27, 125);
+    border: solid 2px rgb(27, 27, 125);
+}
+.back:hover a{
+    color: rgb(27, 27, 125);
+}
 .abc{
     display: flex;
     justify-content: center;
@@ -293,8 +307,165 @@ ul{
 }
 #mobile{
     display: none;
+    color: white;
 }
-
+.v{
+    border-radius: 3px;
+    border: solid 2px rgb(93, 93, 167);
+    width: 50px;
+    height: 30px;
+}
+.mo{
+    background-color: aliceblue;
+    height: 40px;
+    text-align: center;
+    padding-top: 1rem;
+    border-radius: 10px;
+}
+.iv{
+    padding-top: 40px;
+    padding-left: 50px;
+    display: none;
+}
+.im{
+    display: none;
+}
+.owl-carousel .owl-item img{
+    width: 3% !important;
+}
+.third{
+    display: none;
+}
+.width{
+    width: 25rem !important;
+  }
+  .purchase-details{
+    height: 100%;
+    width: 0rem;
+    position: fixed;
+    z-index: 99;
+    overflow-y: scroll;
+    top: 0;
+    right: 0px;
+    background-color: whitesmoke;
+    transition: 0.5s;
+  }
+  .inboximg{
+    text-align: center;
+    transition: 0.5s;
+    max-width: 320px;
+  }
+  .inboximg img{
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  .smallimg{
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    transition: 0.5s;
+  }
+  .smallimg img{
+    height: 70px;
+    width: 70px;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+  .smallcontainer{
+    padding: 2rem 2rem;
+    display: grid;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .smallimg1{
+    margin-top: 10px;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+  }
+  .prdctdetails{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #323C5C;
+    margin-top: 10px;
+    transition: 0.5s;
+    width: 320px;
+  }
+  .prdctdetails .inboxhead{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    transition: 0.5s;
+  }
+  .description{
+    color: #323C5C;
+  }
+  .description h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder; 
+    margin: 15px 0px;
+  
+  }
+  .Fileinc{
+    color: #323C5C;
+  }
+  .Fileinc h3{
+    margin-top: 15px;
+  }
+  .Fileinc ul{
+   font-size: .9rem;
+    margin: 15px 30px;
+  }
+  .description,.Fileinc,.howit{
+    transition: 0.5s;
+    max-width: 320px;
+  }
+  .howit h3{
+    color: #323C5C;
+  }
+  .howit ul{
+    font-size: .9rem;
+     margin: 15px 30px;
+     color: #323C5C;
+   }
+   .purchase-details a{
+    color: #323C5C;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 1rem;
+    position: relative;
+    top: 1rem;
+   }
+   .rating img{
+    height: 13.33px;
+    width: 13.33px !important;
+   }
+   .rating span{
+    font-size: 13px;
+    color: #5E17EB;
+    font-weight: 600;
+    margin-left: 10px;
+   }
+   .rating{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: 1rem;
+   }
+   .buynow{
+    padding: 1rem;
+    border: 0px solid transparent;
+    transition: .2s;
+    margin: 1.5rem 0px;
+    width: 100%;
+    border-radius: 2rem;
+    background-color: #F7D460;
+    font-size: .9rem;
+    font-weight: 600;
+    color: #323C5C;
+    border: 1px solid black;
+   }
+/* Responsive design starts here */
 @media screen and (max-width:800px){
     .first{
         display: none;
@@ -320,9 +491,6 @@ ul{
     #spotlight{
         display: grid;
     }
-    .alin-g{
-        display: grid;
-    }
     .pa-di{
         display: none;
     }
@@ -330,7 +498,7 @@ ul{
         display: none;
     }
     .second{
-        display: none;
+        order: 2;
     }
     .img-u{
         display: block;
@@ -340,7 +508,10 @@ ul{
     }
     #spotlight{
         width: 414px;
+        padding-top: 80px;
+        padding-bottom: 20px;
     }
+
     .icon{
         display: none;
     }
@@ -355,8 +526,7 @@ ul{
         justify-content: center;
     }
     .exp-lr{
-        justify-content: center;
-        padding-left: 53px;
+        display: none;
     }
     .re-th{
         text-align: center;
@@ -381,5 +551,61 @@ ul{
     .foot-1{
         width: 450px;
     }
+    .third{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .back-g{
+        margin-left: 60px;
+        width: 300px;
+    }
+    .ne-x{
+        margin-left: 50px;
+    }
+    .img-4{
+        margin-left: 100px;
+    }
+    .img-3{
+        margin-left: 100px;
+    }
+    .img-2{
+        margin-left: 100px;
+    }
+    .iv{
+        display: block;
+    }
+    .im{
+        display: block;
+        margin-bottom:500px ;
+    }
+    .sect-ion{
+        align-items: center;
+        margin-right: 10px;
+    }
+}
+.jav{
+    display: none;
+    line-height: 3rem;
+    
+}
+#icon5{
+    position: absolute;
+    background-color: rgb(40, 40, 158);
+    height: 150pv;
+    width: 350px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+    align-items: left;
+    margin-top: 100px;
+    line-height: 2;
+    list-style: none;
+   
+}
+#icon5{
+    color: black;
 }
 
